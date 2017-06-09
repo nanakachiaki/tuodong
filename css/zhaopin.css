@@ -417,18 +417,22 @@ a:hover {
 .leftNav li:hover{
 	color: #008aad;
 }
-.leftNav li:hover .liebiao{
+.leftNav li.nowList{
+	color: #008aad;
+}
+.leftNav li:hover .liebiao,
+.leftNav li.nowList .liebiao{
 	background-position: -24px -72px;
 }
-.leftNav li:hover .liucheng{
+.leftNav li:hover .liucheng,
+.leftNav li.nowList .liucheng{
 	background-position: -24px -24px;
 }
-.leftNav li:hover .xingcheng{
+.leftNav li:hover .xingcheng,
+.leftNav li.nowList .xingcheng{
 	background-position: 0 -24px;
 }
-.leftNav li:hover .wenda{
-	background-position: 0 -72px;
-}
+
 /*右侧内容部分*/
 .rightContent{
 	float: right;

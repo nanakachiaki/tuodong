@@ -78,16 +78,16 @@ $(function() {
 	var textBox = $(".textBox");
 	textBox.click(function() {
 		show.css("display","block");
-		document.documentElement.style.overflowY = 'hidden';
-	//	alert($(this).index())
-	})
-	show.click(function() {
 		
-	})
+//		$(window).scroll(function(){
+//			
+//		})
+	//	alert($(this).index())
+})
 	var close = $(".closeShow");
 	close.click(function() {
 		show.css("display", "none");
-		document.documentElement.style.overflowY = 'visible'
+		
 	})
 	
 	
