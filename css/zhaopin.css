@@ -1,0 +1,510 @@
+/*字体*/
+
+@font-face {
+	font-family: "SourceHanSansCN-Normal";
+	src: url('../font/谷歌思源/SourceHanSansCN-Normal.eot');
+	src: url('../font/谷歌思源/SourceHanSansCN-Normal.eot?#font-spider') format('embedded-opentype'), url('../font/谷歌思源/SourceHanSansCN-Normal.woff') format('woff'), url('../font/谷歌思源/SourceHanSansCN-Normal.ttf') format('truetype'), url('../font/谷歌思源/SourceHanSansCN-Normal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*reset*/
+
+
+/** 清除内外边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td
+/* table elements 表格元素 */
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+/** 设置默认字体 **/
+
+body,
+button,
+input,
+select,
+textarea
+/* for ie */
+
+{
+	font: 14px/1.5 tahoma, \5b8b\4f53, ""SourceHanSansCN-Normal"";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+html {
+	font: 12px/1.5 "SourceHanSansCN-Normal", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+	color: #494949;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: courier new, courier, monospace;
+}
+
+
+/* 统一等宽字体 */
+
+small {	
+	font-size: 12px;
+}
+
+
+/* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+
+/** 重置列表元素 **/
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+
+/** 重置文本格式元素 **/
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+
+/* 重置, 减少对行高的影响 */
+
+sub {
+	vertical-align: text-bottom;
+}
+
+
+/** 重置表单元素 **/
+
+legend {
+	color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+	border: 0;
+}
+
+
+/* img 搭车：让链接里的 img 无边框 */
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+
+
+/* 注：optgroup 无法扶正 */
+
+
+/** 重置表格元素 **/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 重置 HTML5 元素 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+mark {
+	background: #ff0;
+}
+
+a {
+	text-decoration: none;
+	color: #62666c;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.wrap {
+	max-width: 1200px;
+	min-width: 980px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.navWrap ul {
+	float: left;
+}
+
+
+/*头部部分*/
+
+.headerWrap {
+	width: 100%;
+	min-width: 980px;
+	overflow: hidden;
+	padding: 20px 0;
+	top: 0;
+	z-index: 100000;
+	background: white;
+	border-bottom: 1px solid #A9A9A9;
+}
+
+.header {
+	max-width: 1700px;
+	min-width: 980px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.navWrap li a.active {
+	color: #008AAD;
+}
+
+.logoWrap,
+.headerWrap .navWrap {
+	float: left;
+}
+
+.navWrap li a:hover {
+	color: #008AAD;
+}
+
+.logoWrap {
+	margin-left: 40px;
+}
+
+.navWrap {
+	margin-top: 18px;
+}
+
+.navWrap {
+	padding-left: 25px;
+}
+
+.headerWrap .navWrap li {
+	float: left;
+	font-size: 20px;
+	color: #62666c;
+	padding: 0 20px 0 20px;
+	line-height: 25px;
+}
+
+.navWrap li.fenge {
+	width: 2px;
+	height: 20px;
+	background-color: #62666C;
+	padding: 0;
+	margin-top: 4px;
+}
+
+.searchWrap {
+	float: right;
+	min-width: 115px;
+	width: 16%;
+	height: 38px;
+	border: 1px solid #62666c;
+	margin-top: 10px;
+	margin-right: 2%;
+}
+
+.searchWrap .searchBox {
+	border: none;
+	outline: none;
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 20px;
+	color: #676767;
+	margin-left: 2px;
+}
+
+.searchWrap img {
+	float: right;
+	margin-top: 7px;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+
+/*banner部分*/
+
+.banner {
+	height: 360px;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	background: #1e1711;
+	position: relative;
+}
+
+.banner img {
+	position: relative;
+	top: -60px;
+}
+
+
+/*footer*/
+
+.footer {
+	margin-top: 20px;
+}
+
+.diggWrap {
+	border-top: 1px solid #dedfe0;
+	width: 100%;
+	height: 50px;
+	padding-top: 20px;
+}
+
+.digg {
+	min-width: 980px;
+	max-width: 1700px;
+	margin: 0 auto;
+}
+
+.diggBox {
+	width: 700px;
+	margin: 0 auto;
+	color: #008AAD;
+	font-size: 14px;
+}
+
+.diggBox span {
+	display: inline-block;
+}
+
+.diggBox span img {
+	vertical-align: middle;
+}
+
+.diggText {
+	width: 500px;
+	text-align: center;
+}
+
+.diggIcon {
+	padding: 0 5px;
+}
+/*内容部分*/
+.contentWrap{
+	padding: 45px 0 80px 0;
+}
+/*左侧nav*/
+.leftNav{
+	float: left;
+}
+.leftNav li{
+	cursor: pointer;
+	margin-bottom:40px;
+}
+.icons{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	overflow: hidden;
+	vertical-align: middle;
+	background: url(../img/jingling.png);
+}
+.icons.liebiao{
+	background-position: -24px -48px;
+}
+.icons.liucheng{
+	background-position: -24px 0;
+}
+.icons.wenda{
+	background-position: 0px -48px;
+}
+.leftNav li:hover{
+	color: #008aad;
+}
+.leftNav li:hover .liebiao{
+	background-position: -24px -72px;
+}
+.leftNav li:hover .liucheng{
+	background-position: -24px -24px;
+}
+.leftNav li:hover .xingcheng{
+	background-position: 0 -24px;
+}
+.leftNav li:hover .wenda{
+	background-position: 0 -72px;
+}
+/*右侧内容部分*/
+.rightContent{
+	float: right;
+	width: 85%;
+}
+h1{
+	font-size: 32px;
+	font-weight: bold;
+	color: #008aad;
+}
+.gangwei{
+	overflow: hidden;
+	margin:25px 0 48px 0;
+}
+.gangwei li{
+	float: left;
+	font-size: 18px;
+	color: #676767;
+	text-align: center;
+	width: 118px;
+	line-height: 26px;
+	border: 1px solid #ececec;
+	cursor: pointer;
+	margin-right: 78px;
+}
+.gangwei li:hover{
+	color: white;
+	background: #008AAD;
+	border: 1px solid #008AAD;
+}
+.gangwei li.nowPage{
+	color: white;
+	background: #008AAD;
+	border: 1px solid #008AAD;	
+}
+ul.content li{
+	border-bottom:1px solid #ececec ;
+}
+ul.content li.tittle{
+	border-bottom: none;
+	border-top: 1px solid #ececec;
+}
+ul.content li span{
+	color: #676767;
+	font-size: 18px;
+	display: inline-block;
+	line-height: 50px;
+}
+ul.content li span.mingcheng{
+	color: #008AAD;
+	width: 25%;
+	text-align: left;
+	margin-left: 25px;
+}
+ul.content li span.leibie,
+ul.content li span.didian,
+ul.content li span.shijian{
+	width: 18%;
+	text-align: center;
+}
+ul.content li span.shijian{
+	margin-right: 6%;
+}
+ul.content li span.mark{
+	color: white;
+	width: 48px;
+	line-height: 24px;
+	text-align: center;
+	vertical-align: middle;
+}
+ul.content li span.mark.hot{
+	background: #ea581a;	
+}
+ul.content li span.mark.new{
+	background: #008AAD;	
+}
+.content .tittle{
+	font-weight: bold;
+}

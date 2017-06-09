@@ -1,0 +1,35 @@
+$(function(){
+	//显示全部
+	var $learnMore1=$(".learnMore1"),
+		$updateContent1=$(".update-content1"),
+		$ellipsis1=$(".ellipsis1"),
+		$shouqi1=$(".shouqi1"),
+		$learnMore2=$(".learnMore2"),
+		$updateContent2=$(".update-content2"),
+		$ellipsis2=$(".ellipsis2"),
+		$shouqi2=$(".shouqi2");
+	$learnMore1.click(function(){
+		$updateContent1.css({"overflow":"visible","height":"auto"});
+		$ellipsis1.css({"display":"none"});
+		$(this).css("display","none");
+		$shouqi1.css("display","block");
+	});
+	$learnMore2.click(function(){
+		$updateContent2.css({"overflow":"visible","height":"auto"});
+		$ellipsis2.css({"display":"none"});
+		$(this).css("display","none");
+		$shouqi2.css("display","block");
+	});
+	$shouqi1.click(function(){
+		$updateContent1.css({"overflow":"hidden","height":"543px"});
+		$ellipsis1.css({"display":"block"});
+		$(this).css("display","none");
+		$learnMore1.css("display","block");
+	});
+	$shouqi2.click(function(){
+		$updateContent2.css({"overflow":"hidden","height":"543px"});
+		$ellipsis2.css({"display":"block"});
+		$(this).css("display","none");
+		$learnMore2.css("display","block");
+	});
+})
